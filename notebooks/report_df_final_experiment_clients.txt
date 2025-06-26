@@ -1,0 +1,80 @@
+=== Shape (rows, columns) ===
+(70609, 2)
+
+=== Column Names ===
+['client_id', 'variation']
+
+=== Data Types ===
+client_id     int64
+variation    object
+dtype: object
+
+=== Missing Values (per column) ===
+client_id        0
+variation    20109
+dtype: int64
+
+=== Duplicate Rows ===
+0
+
+=== Unique Values (per column) ===
+client_id    70609
+variation        2
+dtype: int64
+
+=== DataFrame Info ===
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 70609 entries, 0 to 70608
+Data columns (total 2 columns):
+ #   Column     Non-Null Count  Dtype 
+---  ------     --------------  ----- 
+ 0   client_id  70609 non-null  int64 
+ 1   variation  50500 non-null  object
+dtypes: int64(1), object(1)
+memory usage: 1.1+ MB
+
+=== Descriptive Statistics (including non-numeric) ===
+           client_id variation
+count   7.060900e+04     50500
+unique           NaN         2
+top              NaN      Test
+freq             NaN     26968
+mean    5.004992e+06       NaN
+std     2.877278e+06       NaN
+min     1.690000e+02       NaN
+25%     2.519329e+06       NaN
+50%     5.016978e+06       NaN
+75%     7.483085e+06       NaN
+max     9.999839e+06       NaN
+
+=== First 5 Rows ===
+   client_id variation
+0    9988021      Test
+1    8320017      Test
+2    4033851   Control
+3    1982004      Test
+4    9294070   Control
+
+=== Last 5 Rows ===
+       client_id variation
+70604    2443347       NaN
+70605    8788427       NaN
+70606     266828       NaN
+70607    1266421       NaN
+70608    9895983       NaN
+
+=== Random Sample of 5 Rows ===
+       client_id variation
+5998     9223205      Test
+27067    7822945   Control
+57886    4122250       NaN
+19875    9455946      Test
+15933    9221804      Test
+
+=== Value Counts (for columns with 50 or fewer unique values) ===
+
+--- variation ---
+variation
+Test       26968
+Control    23532
+Name: count, dtype: int64

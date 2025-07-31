@@ -1,0 +1,180 @@
+=== Shape (rows, columns) ===
+(50500, 14)
+
+=== Column Names ===
+['client_id', 'visitor_id', 'visit_id', 'process_step', 'date_time', 'variation', 'clnt_tenure_yr', 'clnt_tenure_mnth', 'clnt_age', 'gendr', 'num_accts', 'bal', 'calls_6_mnth', 'logons_6_mnth']
+
+=== Data Types ===
+client_id                    int64
+visitor_id                  object
+visit_id                    object
+process_step                object
+date_time           datetime64[ns]
+variation                   object
+clnt_tenure_yr             float64
+clnt_tenure_mnth           float64
+clnt_age                   float64
+gendr                       object
+num_accts                    int32
+bal                        float64
+calls_6_mnth                 int32
+logons_6_mnth                int32
+dtype: object
+
+=== Missing Values (per column) ===
+client_id            0
+visitor_id           0
+visit_id             0
+process_step         0
+date_time            0
+variation            0
+clnt_tenure_yr      13
+clnt_tenure_mnth    13
+clnt_age            13
+gendr               13
+num_accts            0
+bal                 13
+calls_6_mnth         0
+logons_6_mnth        0
+dtype: int64
+
+=== Duplicate Rows ===
+0
+
+=== Unique Values (per column) ===
+client_id           50500
+visitor_id          50180
+visit_id            50311
+process_step            5
+date_time           30566
+variation               2
+clnt_tenure_yr         53
+clnt_tenure_mnth      469
+clnt_age              158
+gendr                   4
+num_accts               8
+bal                 50311
+calls_6_mnth            7
+logons_6_mnth           8
+dtype: int64
+
+=== DataFrame Info ===
+<class 'pandas.core.frame.DataFrame'>
+Index: 50500 entries, 12 to 711857
+Data columns (total 14 columns):
+ #   Column            Non-Null Count  Dtype         
+---  ------            --------------  -----         
+ 0   client_id         50500 non-null  int64         
+ 1   visitor_id        50500 non-null  object        
+ 2   visit_id          50500 non-null  object        
+ 3   process_step      50500 non-null  object        
+ 4   date_time         50500 non-null  datetime64[ns]
+ 5   variation         50500 non-null  object        
+ 6   clnt_tenure_yr    50487 non-null  float64       
+ 7   clnt_tenure_mnth  50487 non-null  float64       
+ 8   clnt_age          50487 non-null  float64       
+ 9   gendr             50487 non-null  object        
+ 10  num_accts         50500 non-null  int32         
+ 11  bal               50487 non-null  float64       
+ 12  calls_6_mnth      50500 non-null  int32         
+ 13  logons_6_mnth     50500 non-null  int32         
+dtypes: datetime64[ns](1), float64(4), int32(3), int64(1), object(5)
+memory usage: 5.2+ MB
+
+=== Descriptive Statistics (including non-numeric) ===
+           client_id             visitor_id                      visit_id process_step                      date_time variation  clnt_tenure_yr  clnt_tenure_mnth      clnt_age    gendr     num_accts           bal  calls_6_mnth  logons_6_mnth
+count   5.050000e+04                  50500                         50500        50500                          50500     50500    50487.000000      50487.000000  50487.000000    50487  50500.000000  5.048700e+04  50500.000000   50500.000000
+unique           NaN                  50180                         50311            5                            NaN         2             NaN               NaN           NaN        4           NaN           NaN           NaN            NaN
+top              NaN  652206951_94195881749  768530370_69169395656_765996        start                            NaN      Test             NaN               NaN           NaN  Unknown           NaN           NaN           NaN            NaN
+freq             NaN                      3                             2        25485                            NaN     26968             NaN               NaN           NaN    17280           NaN           NaN           NaN            NaN
+mean    5.006179e+06                    NaN                           NaN          NaN  2017-04-19 23:07:05.123168256       NaN       12.031810        150.416365     47.319795      NaN      2.254000  1.495168e+05      3.092475       6.130277
+min     5.550000e+02                    NaN                           NaN          NaN            2017-03-15 00:19:00       NaN        2.000000         33.000000     17.000000      NaN      0.000000  2.378944e+04      0.000000       0.000000
+25%     2.515646e+06                    NaN                           NaN          NaN            2017-04-04 16:37:45       NaN        6.000000         82.000000     33.500000      NaN      2.000000  3.987718e+04      1.000000       4.000000
+50%     5.025104e+06                    NaN                           NaN          NaN            2017-04-12 11:59:00       NaN       11.000000        136.000000     48.000000      NaN      2.000000  6.573433e+04      3.000000       6.000000
+75%     7.477933e+06                    NaN                           NaN          NaN            2017-04-28 08:23:00       NaN       16.000000        192.000000     59.500000      NaN      2.000000  1.399583e+05      5.000000       8.000000
+max     9.999832e+06                    NaN                           NaN          NaN            2017-06-20 23:21:00       NaN       55.000000        669.000000     96.000000      NaN      7.000000  1.632004e+07      6.000000       9.000000
+std     2.877443e+06                    NaN                           NaN          NaN                            NaN       NaN        6.860326         81.945403     15.518616      NaN      0.534831  3.020390e+05      2.188290       2.177384
+
+=== First 5 Rows ===
+    client_id             visitor_id                      visit_id process_step           date_time variation  clnt_tenure_yr  clnt_tenure_mnth  clnt_age    gendr  num_accts        bal  calls_6_mnth  logons_6_mnth
+12        555  402506806_56087378777  637149525_38041617439_716659        start 2017-04-15 12:57:00      Test             3.0              46.0      29.5  Unknown          2   25454.66             2              6
+17        647   66758770_53988066587   40369564_40101682850_311847       step_2 2017-04-12 15:41:00      Test            12.0             151.0      57.5     Male          2   30525.80             0              4
+52        934  810392784_45004760546    7076463_57954418406_971348        start 2017-04-18 02:36:00      Test             9.0             109.0      51.0   Female          2   32522.88             0              3
+55       1028   42237450_62128060588  557292053_87239438319_391157        start 2017-04-08 18:51:00   Control            12.0             145.0      36.0     Male          3  103520.22             1              4
+68       1104  194240915_18158000533  543158812_46395476577_767725        start 2017-06-12 07:49:00   Control             5.0              66.0      48.0  Unknown          3  154643.94             6              9
+
+=== Last 5 Rows ===
+        client_id             visitor_id                      visit_id process_step           date_time variation  clnt_tenure_yr  clnt_tenure_mnth  clnt_age    gendr  num_accts        bal  calls_6_mnth  logons_6_mnth
+711812    9999150  665127594_52605538620  982803842_91891255980_123078        start 2017-05-29 16:55:00      Test             5.0              66.0      30.0  Unknown          3   97141.71             6              9
+711820    9999400  915967319_19082377501  288904166_90826265353_276104       step_1 2017-04-20 05:21:00      Test             7.0              86.0      28.5  Unknown          2   51787.04             0              3
+711832    9999626   52633065_71189986073  182723364_27031318473_880901       step_1 2017-05-14 09:07:00      Test             9.0             113.0      35.0     Male          2   36642.88             6              9
+711834    9999729  843385170_36953471821   493310979_9209676464_421146        start 2017-04-20 14:21:00      Test            10.0             124.0      31.0   Female          3  107059.74             6              9
+711857    9999832  145538019_54444341400  472154369_16714624241_585315       step_1 2017-05-16 16:46:00      Test            23.0             281.0      49.0   Female          2  431887.61             1              4
+
+=== Random Sample of 5 Rows ===
+        client_id             visitor_id                      visit_id process_step           date_time variation  clnt_tenure_yr  clnt_tenure_mnth  clnt_age    gendr  num_accts        bal  calls_6_mnth  logons_6_mnth
+529731    7438919  841350714_35642337852  966618135_91261928769_511987       step_1 2017-04-18 15:56:00      Test             8.0              98.0      41.0     Male          2  136516.77             4              7
+293903    4155983   57448943_99818249241  863140211_58199328178_275442       step_1 2017-03-29 17:14:00   Control             4.0              52.0      23.5  Unknown          2   28037.01             5              8
+455034    6405187  642000790_23499639881  668729931_44456689477_394707        start 2017-04-20 12:54:00   Control            21.0             258.0      42.0   Female          3  153777.38             5              8
+375099    5294788  377918257_31634107097   18944765_50788180310_622032        start 2017-04-26 11:19:00      Test             8.0             106.0      73.0     Male          2   29698.24             1              4
+197285    2803224   82048071_19480797632  882597561_84491377610_394385       step_1 2017-05-05 21:22:00      Test            15.0             189.0      53.0   Female          3  112792.53             3              6
+
+=== Value Counts (for columns with 50 or fewer unique values) ===
+
+--- process_step ---
+process_step
+start      25485
+step_1     14155
+step_2      8726
+confirm     1570
+step_3       564
+Name: count, dtype: int64
+
+--- variation ---
+variation
+Test       26968
+Control    23532
+Name: count, dtype: int64
+
+--- gendr ---
+gendr
+Unknown    17280
+Male       16947
+Female     16258
+X              2
+Name: count, dtype: int64
+
+--- num_accts ---
+num_accts
+2    39720
+3     8947
+4     1585
+5      205
+6       23
+0       13
+7        6
+1        1
+Name: count, dtype: int64
+
+--- calls_6_mnth ---
+calls_6_mnth
+6    12225
+1     7908
+0     7745
+2     7215
+3     5853
+4     4847
+5     4707
+Name: count, dtype: int64
+
+--- logons_6_mnth ---
+logons_6_mnth
+9    12350
+4     7855
+3     7311
+5     7283
+6     5965
+7     4913
+8     4810
+0       13
+Name: count, dtype: int64

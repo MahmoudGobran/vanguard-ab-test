@@ -1,0 +1,78 @@
+=== Shape (rows, columns) ===
+(37866, 3)
+
+=== Column Names ===
+['client_id', 'visit_id', 'time_spent_minutes']
+
+=== Data Types ===
+client_id               int64
+visit_id               object
+time_spent_minutes    float64
+dtype: object
+
+=== Missing Values (per column) ===
+client_id                0
+visit_id                 0
+time_spent_minutes    4974
+dtype: int64
+
+=== Duplicate Rows ===
+0
+
+=== Unique Values (per column) ===
+client_id             34110
+visit_id              37667
+time_spent_minutes      130
+dtype: int64
+
+=== DataFrame Info ===
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 37866 entries, 0 to 37865
+Data columns (total 3 columns):
+ #   Column              Non-Null Count  Dtype  
+---  ------              --------------  -----  
+ 0   client_id           37866 non-null  int64  
+ 1   visit_id            37866 non-null  object 
+ 2   time_spent_minutes  32892 non-null  float64
+dtypes: float64(1), int64(1), object(1)
+memory usage: 887.6+ KB
+
+=== Descriptive Statistics (including non-numeric) ===
+           client_id                     visit_id  time_spent_minutes
+count   3.786600e+04                        37866        32892.000000
+unique           NaN                        37667                 NaN
+top              NaN  223810870_31774647961_65837                 NaN
+freq             NaN                            2                 NaN
+mean    5.003694e+06                          NaN            6.789341
+std     2.874611e+06                          NaN            8.689572
+min     5.550000e+02                          NaN          -31.000000
+25%     2.518759e+06                          NaN            3.000000
+50%     5.040802e+06                          NaN            4.000000
+75%     7.467270e+06                          NaN            8.000000
+max     9.999729e+06                          NaN          300.000000
+
+=== First 5 Rows ===
+   client_id                      visit_id  time_spent_minutes
+0        555  637149525_38041617439_716659                 3.0
+1        647   40369564_40101682850_311847                 6.0
+2       1195  393817425_39015278493_996341                 4.0
+3       1197   71862471_21202285428_848395                 1.0
+4       1336  583743392_96265099036_939815                 3.0
+
+=== Last 5 Rows ===
+       client_id                      visit_id  time_spent_minutes
+37861    9998851  310744937_17135608286_213964                 3.0
+37862    9998964  699981922_52880598802_858635                 NaN
+37863    9999009  149965839_24823291142_245569                 3.0
+37864    9999400  288904166_90826265353_276104                 2.0
+37865    9999729  870243567_56915814033_814203                 1.0
+
+=== Random Sample of 5 Rows ===
+       client_id                      visit_id  time_spent_minutes
+19139    5089510  566177201_59408541151_464781                 3.0
+25378    6707447   546554741_6199081863_417707                 7.0
+17753    4722638   93971029_59537760443_900774                14.0
+31256    8221149  550526467_55871899825_910084                 9.0
+35642    9397699  872175167_37836173523_819984                 1.0
+
+=== Value Counts (for columns with 50 or fewer unique values) ===

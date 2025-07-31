@@ -1,0 +1,107 @@
+=== Shape (rows, columns) ===
+(69425, 5)
+
+=== Column Names ===
+['client_id', 'visit_id', 'variation', 'max_step_order', 'completed_process']
+
+=== Data Types ===
+client_id             int64
+visit_id             object
+variation            object
+max_step_order        int64
+completed_process      bool
+dtype: object
+
+=== Missing Values (per column) ===
+client_id            0
+visit_id             0
+variation            0
+max_step_order       0
+completed_process    0
+dtype: int64
+
+=== Duplicate Rows ===
+0
+
+=== Unique Values (per column) ===
+client_id            50487
+visit_id             69183
+variation                2
+max_step_order           5
+completed_process        2
+dtype: int64
+
+=== DataFrame Info ===
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 69425 entries, 0 to 69424
+Data columns (total 5 columns):
+ #   Column             Non-Null Count  Dtype 
+---  ------             --------------  ----- 
+ 0   client_id          69425 non-null  int64 
+ 1   visit_id           69425 non-null  object
+ 2   variation          69425 non-null  object
+ 3   max_step_order     69425 non-null  int64 
+ 4   completed_process  69425 non-null  bool  
+dtypes: bool(1), int64(2), object(2)
+memory usage: 2.2+ MB
+
+=== Descriptive Statistics (including non-numeric) ===
+           client_id                      visit_id variation  max_step_order completed_process
+count   6.942500e+04                         69425     69425    69425.000000             69425
+unique           NaN                         69183         2             NaN                 2
+top              NaN  776532663_67543630498_761252      Test             NaN              True
+freq             NaN                             2     37190             NaN             37866
+mean    5.009028e+06                           NaN       NaN        2.719107               NaN
+std     2.877219e+06                           NaN       NaN        1.612304               NaN
+min     5.550000e+02                           NaN       NaN        0.000000               NaN
+25%     2.517151e+06                           NaN       NaN        1.000000               NaN
+50%     5.033211e+06                           NaN       NaN        4.000000               NaN
+75%     7.479054e+06                           NaN       NaN        4.000000               NaN
+max     9.999832e+06                           NaN       NaN        4.000000               NaN
+
+=== First 5 Rows ===
+   client_id                      visit_id variation  max_step_order  completed_process
+0        555  637149525_38041617439_716659      Test               4               True
+1        647   40369564_40101682850_311847      Test               4               True
+2        934    7076463_57954418406_971348      Test               0              False
+3       1028  557292053_87239438319_391157   Control               3              False
+4       1104  543158812_46395476577_767725   Control               0              False
+
+=== Last 5 Rows ===
+       client_id                      visit_id variation  max_step_order  completed_process
+69420    9999626  182723364_27031318473_880901      Test               1              False
+69421    9999729   493310979_9209676464_421146      Test               2              False
+69422    9999729  870243567_56915814033_814203      Test               4               True
+69423    9999729   99583652_41711450505_426179      Test               1              False
+69424    9999832  472154369_16714624241_585315      Test               1              False
+
+=== Random Sample of 5 Rows ===
+       client_id                      visit_id variation  max_step_order  completed_process
+50855    7320092  660520916_27741179042_863875   Control               0              False
+13148    1916528  296545526_41744942740_940100      Test               1              False
+8065     1177271  193125659_31795729755_733904      Test               0              False
+14451    2101802   669350385_7856133978_201936      Test               3              False
+59295    8522060  664528412_36967436658_498425   Control               4               True
+
+=== Value Counts (for columns with 50 or fewer unique values) ===
+
+--- variation ---
+variation
+Test       37190
+Control    32235
+Name: count, dtype: int64
+
+--- max_step_order ---
+max_step_order
+4    37866
+0    12652
+1     7401
+3     6897
+2     4609
+Name: count, dtype: int64
+
+--- completed_process ---
+completed_process
+True     37866
+False    31559
+Name: count, dtype: int64

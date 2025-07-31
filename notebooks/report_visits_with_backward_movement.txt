@@ -1,0 +1,94 @@
+=== Shape (rows, columns) ===
+(69425, 4)
+
+=== Column Names ===
+['client_id', 'visit_id', 'variation', 'has_backward_movement']
+
+=== Data Types ===
+client_id                 int64
+visit_id                 object
+variation                object
+has_backward_movement      bool
+dtype: object
+
+=== Missing Values (per column) ===
+client_id                0
+visit_id                 0
+variation                0
+has_backward_movement    0
+dtype: int64
+
+=== Duplicate Rows ===
+0
+
+=== Unique Values (per column) ===
+client_id                50487
+visit_id                 69183
+variation                    2
+has_backward_movement        2
+dtype: int64
+
+=== DataFrame Info ===
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 69425 entries, 0 to 69424
+Data columns (total 4 columns):
+ #   Column                 Non-Null Count  Dtype 
+---  ------                 --------------  ----- 
+ 0   client_id              69425 non-null  int64 
+ 1   visit_id               69425 non-null  object
+ 2   variation              69425 non-null  object
+ 3   has_backward_movement  69425 non-null  bool  
+dtypes: bool(1), int64(1), object(2)
+memory usage: 1.7+ MB
+
+=== Descriptive Statistics (including non-numeric) ===
+           client_id                      visit_id variation has_backward_movement
+count   6.942500e+04                         69425     69425                 69425
+unique           NaN                         69183         2                     2
+top              NaN  776532663_67543630498_761252      Test                  True
+freq             NaN                             2     37190                 45963
+mean    5.009028e+06                           NaN       NaN                   NaN
+std     2.877219e+06                           NaN       NaN                   NaN
+min     5.550000e+02                           NaN       NaN                   NaN
+25%     2.517151e+06                           NaN       NaN                   NaN
+50%     5.033211e+06                           NaN       NaN                   NaN
+75%     7.479054e+06                           NaN       NaN                   NaN
+max     9.999832e+06                           NaN       NaN                   NaN
+
+=== First 5 Rows ===
+   client_id                      visit_id variation  has_backward_movement
+0        555  637149525_38041617439_716659      Test                   True
+1        647   40369564_40101682850_311847      Test                   True
+2        934    7076463_57954418406_971348      Test                  False
+3       1028  557292053_87239438319_391157   Control                   True
+4       1104  543158812_46395476577_767725   Control                  False
+
+=== Last 5 Rows ===
+       client_id                      visit_id variation  has_backward_movement
+69420    9999626  182723364_27031318473_880901      Test                   True
+69421    9999729   493310979_9209676464_421146      Test                   True
+69422    9999729  870243567_56915814033_814203      Test                   True
+69423    9999729   99583652_41711450505_426179      Test                  False
+69424    9999832  472154369_16714624241_585315      Test                   True
+
+=== Random Sample of 5 Rows ===
+       client_id                      visit_id variation  has_backward_movement
+67010    9646410   226948236_68797696432_74013      Test                   True
+46731    6742624  139952427_57560152627_910326   Control                   True
+44820    6482281  864903969_22238864194_560908      Test                  False
+57678    8279920  653300651_60297137383_334258      Test                  False
+19323    2809916   444443139_4331454728_706388      Test                  False
+
+=== Value Counts (for columns with 50 or fewer unique values) ===
+
+--- variation ---
+variation
+Test       37190
+Control    32235
+Name: count, dtype: int64
+
+--- has_backward_movement ---
+has_backward_movement
+True     45963
+False    23462
+Name: count, dtype: int64

@@ -1,0 +1,199 @@
+=== Shape (rows, columns) ===
+(203265, 16)
+
+=== Column Names ===
+['client_id', 'visitor_id', 'visit_id', 'process_step', 'date_time', 'variation', 'clnt_tenure_yr', 'clnt_tenure_mnth', 'clnt_age', 'gendr', 'num_accts', 'bal', 'calls_6_mnth', 'logons_6_mnth', 'step_order', 'completed_process']
+
+=== Data Types ===
+client_id                     int64
+visitor_id                   object
+visit_id                     object
+process_step                 object
+date_time            datetime64[ns]
+variation                    object
+clnt_tenure_yr              float64
+clnt_tenure_mnth            float64
+clnt_age                    float64
+gendr                        object
+num_accts                   float64
+bal                         float64
+calls_6_mnth                float64
+logons_6_mnth               float64
+step_order                    int64
+completed_process              bool
+dtype: object
+
+=== Missing Values (per column) ===
+client_id            0
+visitor_id           0
+visit_id             0
+process_step         0
+date_time            0
+variation            0
+clnt_tenure_yr       0
+clnt_tenure_mnth     0
+clnt_age             0
+gendr                0
+num_accts            0
+bal                  0
+calls_6_mnth         0
+logons_6_mnth        0
+step_order           0
+completed_process    0
+dtype: int64
+
+=== Duplicate Rows ===
+0
+
+=== Unique Values (per column) ===
+client_id            34110
+visitor_id           34910
+visit_id             37667
+process_step             5
+date_time            55720
+variation                2
+clnt_tenure_yr          51
+clnt_tenure_mnth       457
+clnt_age               155
+gendr                    3
+num_accts                7
+bal                  34002
+calls_6_mnth             7
+logons_6_mnth            7
+step_order               5
+completed_process        1
+dtype: int64
+
+=== DataFrame Info ===
+<class 'pandas.core.frame.DataFrame'>
+Index: 203265 entries, 0 to 302284
+Data columns (total 16 columns):
+ #   Column             Non-Null Count   Dtype         
+---  ------             --------------   -----         
+ 0   client_id          203265 non-null  int64         
+ 1   visitor_id         203265 non-null  object        
+ 2   visit_id           203265 non-null  object        
+ 3   process_step       203265 non-null  object        
+ 4   date_time          203265 non-null  datetime64[ns]
+ 5   variation          203265 non-null  object        
+ 6   clnt_tenure_yr     203265 non-null  float64       
+ 7   clnt_tenure_mnth   203265 non-null  float64       
+ 8   clnt_age           203265 non-null  float64       
+ 9   gendr              203265 non-null  object        
+ 10  num_accts          203265 non-null  float64       
+ 11  bal                203265 non-null  float64       
+ 12  calls_6_mnth       203265 non-null  float64       
+ 13  logons_6_mnth      203265 non-null  float64       
+ 14  step_order         203265 non-null  int64         
+ 15  completed_process  203265 non-null  bool          
+dtypes: bool(1), datetime64[ns](1), float64(7), int64(2), object(5)
+memory usage: 25.0+ MB
+
+=== Descriptive Statistics (including non-numeric) ===
+           client_id             visitor_id                     visit_id process_step                      date_time variation  clnt_tenure_yr  clnt_tenure_mnth       clnt_age    gendr      num_accts           bal   calls_6_mnth  logons_6_mnth     step_order completed_process
+count   2.032650e+05                 203265                       203265       203265                         203265    203265   203265.000000     203265.000000  203265.000000   203265  203265.000000  2.032650e+05  203265.000000  203265.000000  203265.000000            203265
+unique           NaN                  34910                        37667            5                            NaN         2             NaN               NaN            NaN        3            NaN           NaN            NaN            NaN            NaN                 1
+top              NaN  528332823_62425640679  712824876_8175482950_365042        start                            NaN      Test             NaN               NaN            NaN  Unknown            NaN           NaN            NaN            NaN            NaN              True
+freq             NaN                     42                           42        42737                            NaN    113782             NaN               NaN            NaN    70571            NaN           NaN            NaN            NaN            NaN            203265
+mean    5.003129e+06                    NaN                          NaN          NaN  2017-04-19 02:27:48.613386752       NaN       12.050141        150.598780      47.093700      NaN       2.276481  1.561558e+05       3.170566       6.205687       1.974811               NaN
+min     5.550000e+02                    NaN                          NaN          NaN            2017-03-15 00:19:00       NaN        2.000000         33.000000      17.000000      NaN       1.000000  2.378944e+04       0.000000       3.000000       0.000000               NaN
+25%     2.516332e+06                    NaN                          NaN          NaN            2017-04-03 14:46:00       NaN        6.000000         81.000000      33.500000      NaN       2.000000  4.017856e+04       1.000000       4.000000       1.000000               NaN
+50%     5.040886e+06                    NaN                          NaN          NaN            2017-04-12 11:41:00       NaN       11.000000        135.000000      48.000000      NaN       2.000000  6.685945e+04       3.000000       6.000000       2.000000               NaN
+75%     7.451462e+06                    NaN                          NaN          NaN            2017-04-25 17:39:00       NaN       16.000000        192.000000      59.500000      NaN       2.000000  1.446148e+05       6.000000       9.000000       3.000000               NaN
+max     9.999729e+06                    NaN                          NaN          NaN            2017-06-20 23:26:00       NaN       55.000000        669.000000      95.500000      NaN       7.000000  1.632004e+07       6.000000       9.000000       4.000000               NaN
+std     2.869296e+06                    NaN                          NaN          NaN                            NaN       NaN        6.911679         82.560003      15.328136      NaN       0.553867  3.276155e+05       2.184809       2.172476       1.432301               NaN
+
+=== First 5 Rows ===
+   client_id             visitor_id                      visit_id process_step           date_time variation  clnt_tenure_yr  clnt_tenure_mnth  clnt_age    gendr  num_accts       bal  calls_6_mnth  logons_6_mnth  step_order  completed_process
+0        555  402506806_56087378777  637149525_38041617439_716659        start 2017-04-15 12:57:00      Test             3.0              46.0      29.5  Unknown        2.0  25454.66           2.0            6.0           0               True
+1        555  402506806_56087378777  637149525_38041617439_716659       step_2 2017-04-15 12:58:00      Test             3.0              46.0      29.5  Unknown        2.0  25454.66           2.0            6.0           2               True
+2        555  402506806_56087378777  637149525_38041617439_716659       step_1 2017-04-15 12:58:00      Test             3.0              46.0      29.5  Unknown        2.0  25454.66           2.0            6.0           1               True
+3        555  402506806_56087378777  637149525_38041617439_716659      confirm 2017-04-15 13:00:00      Test             3.0              46.0      29.5  Unknown        2.0  25454.66           2.0            6.0           4               True
+4        555  402506806_56087378777  637149525_38041617439_716659       step_3 2017-04-15 13:00:00      Test             3.0              46.0      29.5  Unknown        2.0  25454.66           2.0            6.0           3               True
+
+=== Last 5 Rows ===
+        client_id             visitor_id                      visit_id process_step           date_time variation  clnt_tenure_yr  clnt_tenure_mnth  clnt_age   gendr  num_accts        bal  calls_6_mnth  logons_6_mnth  step_order  completed_process
+302280    9999729  834634258_21862004160  870243567_56915814033_814203       step_2 2017-05-08 16:08:00      Test            10.0             124.0      31.0  Female        3.0  107059.74           6.0            9.0           2               True
+302281    9999729  834634258_21862004160  870243567_56915814033_814203       step_1 2017-05-08 16:08:00      Test            10.0             124.0      31.0  Female        3.0  107059.74           6.0            9.0           1               True
+302282    9999729  834634258_21862004160  870243567_56915814033_814203        start 2017-05-08 16:08:00      Test            10.0             124.0      31.0  Female        3.0  107059.74           6.0            9.0           0               True
+302283    9999729  834634258_21862004160  870243567_56915814033_814203      confirm 2017-05-08 16:09:00      Test            10.0             124.0      31.0  Female        3.0  107059.74           6.0            9.0           4               True
+302284    9999729  834634258_21862004160  870243567_56915814033_814203       step_3 2017-05-08 16:09:00      Test            10.0             124.0      31.0  Female        3.0  107059.74           6.0            9.0           3               True
+
+=== Random Sample of 5 Rows ===
+        client_id             visitor_id                      visit_id process_step           date_time variation  clnt_tenure_yr  clnt_tenure_mnth  clnt_age    gendr  num_accts        bal  calls_6_mnth  logons_6_mnth  step_order  completed_process
+289715    9575313  513007466_94452123634  278458321_72665999953_107827        start 2017-04-12 11:35:00      Test            12.0             152.0      40.5     Male        2.0  157424.10           6.0            9.0           0               True
+183452    6090404  288040813_92882634387  560947916_36311597878_762753       step_1 2017-05-13 21:59:00   Control             8.0             107.0      61.0   Female        2.0   50608.82           1.0            4.0           1               True
+10377      339004  288208863_56767632250  610613315_99518020765_341271       step_1 2017-06-11 10:43:00   Control            22.0             273.0      31.0     Male        2.0   45460.23           1.0            4.0           1               True
+162057    5388847  504160130_84482310815  701776323_90668683886_743537       step_3 2017-03-29 11:33:00      Test             5.0              71.0      51.5   Female        3.0  176194.61           4.0            7.0           3               True
+283908    9369908  243216842_16809681687  725988207_96137512899_827103      confirm 2017-06-13 12:26:00   Control             7.0              94.0      48.0  Unknown        2.0   35159.33           1.0            4.0           4               True
+
+=== Value Counts (for columns with 50 or fewer unique values) ===
+
+--- process_step ---
+process_step
+start      42737
+confirm    41731
+step_1     41179
+step_2     39547
+step_3     38071
+Name: count, dtype: int64
+
+--- variation ---
+variation
+Test       113782
+Control     89483
+Name: count, dtype: int64
+
+--- gendr ---
+gendr
+Unknown    70571
+Male       69148
+Female     63546
+Name: count, dtype: int64
+
+--- num_accts ---
+num_accts
+2.0    156457
+3.0     38628
+4.0      7133
+5.0       889
+6.0       122
+7.0        31
+1.0         5
+Name: count, dtype: int64
+
+--- calls_6_mnth ---
+calls_6_mnth
+6.0    51541
+1.0    30980
+0.0    29185
+2.0    28765
+3.0    23780
+4.0    19701
+5.0    19313
+Name: count, dtype: int64
+
+--- logons_6_mnth ---
+logons_6_mnth
+9.0    52064
+4.0    30843
+5.0    28957
+3.0    27628
+6.0    24246
+7.0    19910
+8.0    19617
+Name: count, dtype: int64
+
+--- step_order ---
+step_order
+0    42737
+4    41731
+1    41179
+2    39547
+3    38071
+Name: count, dtype: int64
+
+--- completed_process ---
+completed_process
+True    203265
+Name: count, dtype: int64

@@ -28,7 +28,7 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='df_full_ab_test_cleaned' name='textscan.0e5p6en1x122s00ztnuyt05rozmy'>
-            <connection class='textscan' directory='Data/processed' filename='df_full_ab_test_cleaned.csv' password='' server='' />
+            <connection class='textscan' directory='C:/Users/Mahmoud Gobran/00_Ironhack/Projects/vanguard-ab-test/data/processed' filename='df_full_ab_test_cleaned.csv' password='' server='' />
           </named-connection>
         </named-connections>
         <relation connection='textscan.0e5p6en1x122s00ztnuyt05rozmy' name='df_full_ab_test_cleaned.csv' table='[df_full_ab_test_cleaned#csv]' type='table'>
@@ -374,8 +374,8 @@
       <column-instance column='[Variation (copy)_666532772726845452]' derivation='None' name='[none:Variation (copy)_666532772726845452:nk]' pivot='key' type='nominal' />
       <column-instance column='[gendr]' derivation='None' name='[none:gendr:nk]' pivot='key' type='nominal' />
       <column-instance column='[variation]' derivation='None' name='[none:variation:nk]' pivot='key' type='nominal' />
-      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='false' object-id='' units='records'>
-        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/#TableauTemp_0z085qa0idyhz80zv8x5r0f5xpdz.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='07/02/2025 07:14:09 PM' username='tableau_internal_user'>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/#TableauTemp_0kg8mj203a4cts1gyfpqb1mwcf8n.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='07/31/2025 06:53:17 PM' username='tableau_internal_user'>
           <relation name='Extract' table='[Extract].[Extract]' type='table' />
           <metadata-records>
             <metadata-record class='column'>
@@ -388,7 +388,7 @@
               <family>df_full_ab_test_cleaned.csv</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>124300</approx-count>
+              <approx-count>126971</approx-count>
               <contains-null>true</contains-null>
               <object-id>[df_full_ab_test_cleaned.csv_FC9E7745DF3846CE9FC77A30FCCE760D]</object-id>
             </metadata-record>
@@ -402,7 +402,7 @@
               <family>df_full_ab_test_cleaned.csv</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>138064</approx-count>
+              <approx-count>132559</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
               <object-id>[df_full_ab_test_cleaned.csv_FC9E7745DF3846CE9FC77A30FCCE760D]</object-id>
@@ -417,7 +417,7 @@
               <family>df_full_ab_test_cleaned.csv</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>183665</approx-count>
+              <approx-count>162083</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
               <object-id>[df_full_ab_test_cleaned.csv_FC9E7745DF3846CE9FC77A30FCCE760D]</object-id>
@@ -447,7 +447,7 @@
               <family>df_full_ab_test_cleaned.csv</family>
               <local-type>datetime</local-type>
               <aggregation>Year</aggregation>
-              <approx-count>65252</approx-count>
+              <approx-count>72405</approx-count>
               <contains-null>true</contains-null>
               <object-id>[df_full_ab_test_cleaned.csv_FC9E7745DF3846CE9FC77A30FCCE760D]</object-id>
             </metadata-record>
@@ -476,7 +476,7 @@
               <family>df_full_ab_test_cleaned.csv</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>88</approx-count>
+              <approx-count>79</approx-count>
               <contains-null>true</contains-null>
               <object-id>[df_full_ab_test_cleaned.csv_FC9E7745DF3846CE9FC77A30FCCE760D]</object-id>
             </metadata-record>
@@ -490,7 +490,7 @@
               <family>df_full_ab_test_cleaned.csv</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>1080</approx-count>
+              <approx-count>1158</approx-count>
               <contains-null>true</contains-null>
               <object-id>[df_full_ab_test_cleaned.csv_FC9E7745DF3846CE9FC77A30FCCE760D]</object-id>
             </metadata-record>
@@ -504,7 +504,7 @@
               <family>df_full_ab_test_cleaned.csv</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>219</approx-count>
+              <approx-count>296</approx-count>
               <contains-null>true</contains-null>
               <object-id>[df_full_ab_test_cleaned.csv_FC9E7745DF3846CE9FC77A30FCCE760D]</object-id>
             </metadata-record>
@@ -533,7 +533,7 @@
               <family>df_full_ab_test_cleaned.csv</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>4</approx-count>
+              <approx-count>7</approx-count>
               <contains-null>true</contains-null>
               <object-id>[df_full_ab_test_cleaned.csv_FC9E7745DF3846CE9FC77A30FCCE760D]</object-id>
             </metadata-record>
@@ -547,7 +547,7 @@
               <family>df_full_ab_test_cleaned.csv</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>124300</approx-count>
+              <approx-count>124216</approx-count>
               <contains-null>true</contains-null>
               <object-id>[df_full_ab_test_cleaned.csv_FC9E7745DF3846CE9FC77A30FCCE760D]</object-id>
             </metadata-record>
@@ -617,7 +617,7 @@
               <family>df_full_ab_test_cleaned.csv</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>248</approx-count>
+              <approx-count>159</approx-count>
               <contains-null>true</contains-null>
               <object-id>[df_full_ab_test_cleaned.csv_FC9E7745DF3846CE9FC77A30FCCE760D]</object-id>
             </metadata-record>
@@ -2323,9 +2323,9 @@
       </datasource-dependencies>
       <zones>
         <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
-          <zone h='89042' id='7' param='horz' type-v2='layout-flow' w='98612' x='694' y='10100'>
-            <zone h='89042' id='5' type-v2='layout-basic' w='84723' x='694' y='10100'>
-              <zone h='89042' id='3' name='4. Completion Rate by Segment' show-title='false' w='27523' x='57894' y='10100'>
+          <zone h='89042' id='7' param='horz' type-v2='layout-flow' w='98896' x='552' y='10100'>
+            <zone h='89042' id='5' type-v2='layout-basic' w='87846' x='552' y='10100'>
+              <zone h='89042' id='3' name='4. Completion Rate by Segment' show-title='false' w='28538' x='59860' y='10100'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -2333,7 +2333,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='89042' id='10' name='5. Average Time Spent by Segment' show-title='false' w='26699' x='694' y='10100'>
+              <zone h='89042' id='10' name='5. Average Time Spent by Segment' show-title='false' w='27683' x='552' y='10100'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -2341,7 +2341,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='89042' id='12' name='6. Error Rate by Segment' show-title='false' w='30501' x='27393' y='10100'>
+              <zone h='89042' id='12' name='6. Error Rate by Segment' show-title='false' w='31625' x='28235' y='10100'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -2350,8 +2350,8 @@
                 </zone-style>
               </zone>
             </zone>
-            <zone fixed-size='160' h='89042' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='13889' x='85417' y='10100'>
-              <zone h='7081' id='9' name='4. Completion Rate by Segment' pane-specification-id='0' param='[federated.1c3aucr0rw5dqn1dpvjc118l5hp9].[none:variation:nk]' type-v2='color' w='13889' x='85417' y='10100'>
+            <zone fixed-size='160' h='89042' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='11050' x='88398' y='10100'>
+              <zone h='7081' id='9' name='4. Completion Rate by Segment' pane-specification-id='0' param='[federated.1c3aucr0rw5dqn1dpvjc118l5hp9].[none:variation:nk]' type-v2='color' w='11050' x='88398' y='10100'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -2359,7 +2359,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone fixed-size='119' h='13626' id='11' is-fixed='true' mode='checklist' name='5. Average Time Spent by Segment' param='[federated.1c3aucr0rw5dqn1dpvjc118l5hp9].[none:gendr:nk]' type-v2='filter' w='13889' x='85417' y='17181'>
+              <zone fixed-size='119' h='13626' id='11' is-fixed='true' mode='checklist' name='5. Average Time Spent by Segment' param='[federated.1c3aucr0rw5dqn1dpvjc118l5hp9].[none:gendr:nk]' type-v2='filter' w='11050' x='88398' y='17181'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -2367,7 +2367,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='19742' id='8' mode='checklist' name='4. Completion Rate by Segment' param='[federated.1c3aucr0rw5dqn1dpvjc118l5hp9].[none:Calculation_666532772434882565:nk]' type-v2='filter' w='13889' x='85417' y='30807'>
+              <zone h='19742' id='8' mode='checklist' name='4. Completion Rate by Segment' param='[federated.1c3aucr0rw5dqn1dpvjc118l5hp9].[none:Calculation_666532772434882565:nk]' type-v2='filter' w='11050' x='88398' y='30807'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -2375,7 +2375,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='13626' id='13' name='6. Error Rate by Segment' param='[federated.1c3aucr0rw5dqn1dpvjc118l5hp9].[none:Calculation_666532772436406281:nk]' type-v2='filter' w='13889' x='85417' y='50549'>
+              <zone h='13626' id='13' name='6. Error Rate by Segment' param='[federated.1c3aucr0rw5dqn1dpvjc118l5hp9].[none:Calculation_666532772436406281:nk]' type-v2='filter' w='11050' x='88398' y='50549'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -2383,7 +2383,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='9549' id='18' name='4. Completion Rate by Segment' param='[federated.1c3aucr0rw5dqn1dpvjc118l5hp9].[none:Calculation_666532772435914760:nk]' type-v2='filter' values='database' w='13889' x='85417' y='64175'>
+              <zone h='9549' id='18' name='4. Completion Rate by Segment' param='[federated.1c3aucr0rw5dqn1dpvjc118l5hp9].[none:Calculation_666532772435914760:nk]' type-v2='filter' values='database' w='11050' x='88398' y='64175'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -2391,7 +2391,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='13626' id='19' name='4. Completion Rate by Segment' param='[federated.1c3aucr0rw5dqn1dpvjc118l5hp9].[none:Calculation_666532772435689479:nk]' type-v2='filter' values='database' w='13889' x='85417' y='73724'>
+              <zone h='13626' id='19' name='4. Completion Rate by Segment' param='[federated.1c3aucr0rw5dqn1dpvjc118l5hp9].[none:Calculation_666532772435689479:nk]' type-v2='filter' values='database' w='11050' x='88398' y='73724'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -2399,7 +2399,7 @@
                   <format attr='margin' value='4' />
                 </zone-style>
               </zone>
-              <zone h='11588' id='20' name='4. Completion Rate by Segment' param='[federated.1c3aucr0rw5dqn1dpvjc118l5hp9].[none:Calculation_666532772435562502:nk]' type-v2='filter' values='database' w='13889' x='85417' y='87350'>
+              <zone h='11588' id='20' name='4. Completion Rate by Segment' param='[federated.1c3aucr0rw5dqn1dpvjc118l5hp9].[none:Calculation_666532772435562502:nk]' type-v2='filter' values='database' w='11050' x='88398' y='87350'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -2409,7 +2409,7 @@
               </zone>
             </zone>
           </zone>
-          <zone h='9242' id='15' type-v2='text' w='98612' x='694' y='858'>
+          <zone h='9242' id='15' type-v2='text' w='98896' x='552' y='858'>
             <formatted-text>
               <run fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='20'>Vanguard A/B Test Results: Detailed Demographic Insights</run>
             </formatted-text>
@@ -3144,7 +3144,7 @@
       </viewpoint>
       <simple-id uuid='{0C1849B3-01CB-4604-852C-0CEFFF126557}' />
     </window>
-    <window class='worksheet' maximized='true' name='10. Number of Accounts Distribution'>
+    <window class='worksheet' name='10. Number of Accounts Distribution'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -3252,7 +3252,7 @@
       <active id='15' />
       <simple-id uuid='{0D0AB369-028C-45D0-BF68-B04F1E7DF968}' />
     </window>
-    <window class='dashboard' name='Dashboard 2: Detailed Demographic Insights'>
+    <window class='dashboard' maximized='true' name='Dashboard 2: Detailed Demographic Insights'>
       <viewpoints>
         <viewpoint name='4. Completion Rate by Segment'>
           <zoom type='fit-height' />

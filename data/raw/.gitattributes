@@ -1,0 +1,7 @@
+df_final_demo filter=lfs diff=lfs merge=lfs -text
+df_final_web_data_pt_1 filter=lfs diff=lfs merge=lfs -text
+df_final_web_data_pt_2 filter=lfs diff=lfs merge=lfs -text
+C:Userspedrocursomini_projectvanguard_finalvanguard-ab-testdataprocessed filter=lfs diff=lfs merge=lfs -text
+df_full_ab_test_cleaned filter=lfs diff=lfs merge=lfs -text
+C:Userspedrocursomini_projectvanguard_finalvanguard-ab-testdataprocesseddf_full_ab_test_cleaned.ipynb filter=lfs diff=lfs merge=lfs -text
+C:Userspedrocursomini_projectvanguard_finalvanguard-ab-testdataprocesseddf_full_ab_test_cleaned filter=lfs diff=lfs merge=lfs -text
